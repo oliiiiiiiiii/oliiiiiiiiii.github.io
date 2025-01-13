@@ -11,7 +11,7 @@ myImage.onclick = function () {
 };
 
 let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+let myHeading = document.querySelector("h2");
 
 function setUserName(exclamation) {
     let myName = prompt("Please enter your name!" + exclamation);
@@ -20,7 +20,7 @@ function setUserName(exclamation) {
     }
     else {
         localStorage.setItem("name", myName);
-        myHeading.innerHTML = "Mozilla is cool, " + myName;
+        myHeading.innerHTML = "Hello, " + myName;
     }
 }
 
@@ -28,7 +28,7 @@ if (!localStorage.getItem("name")) {
     setUserName('');
 } else {
     let storedName = localStorage.getItem("name");
-    myHeading.innerHTML = "Mozilla is cool, " + storedName;
+    myHeading.innerHTML = "Hello, " + storedName;
 }
 
 myButton.onclick = function () {
