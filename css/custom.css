@@ -1,0 +1,5 @@
+/* Keep：文章頁隱藏作者頭像與作者名稱（保留日期/字數/閱讀時間） */
+.post-header .avatar-box,
+.post-header .author {
+  display: none !important;
+}
