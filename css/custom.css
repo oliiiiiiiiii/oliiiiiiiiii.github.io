@@ -3,3 +3,11 @@
 .post-header .author {
   display: none !important;
 }
+
+.post-tools .toggle-show-toc {
+  display: none !important;
+}
+
+.post-tools .full-screen {
+  display: none !important;
+}
